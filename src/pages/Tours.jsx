@@ -3,7 +3,6 @@ import CommonSection from "../shared/CommonSection";
 import "../styles/tour.css";
 import TourCard from "../shared/TourCard";
 import SearchBar from "../shared/SearchBar";
-import Newsletter from "../shared/Newsletter";
 import { Row, Container, Col } from "reactstrap";
 import { useEffect, useState } from "react";
 import useFetch from "../hooks/useFetch";
@@ -61,7 +60,7 @@ const Tours = () => {
           )}
         </Container>
       </section>
-      <Newsletter />
+      
     </>
   );
 };

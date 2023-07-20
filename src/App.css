@@ -17,7 +17,7 @@
 }
 
 body {
-  font-family: var(--font-name);
+  font-family: "Times New Roman";
 }
 
 section {
@@ -46,7 +46,6 @@ ul {
   background: var(--secondary-color) !important;
   border: none !important;
   border-radius: 50px !important;
-  padding: 0.4rem 1.5rem !important;
 }
 
 .primary__btn a {
@@ -92,12 +91,6 @@ ul {
   .primary__btn a,
   .secondary__btn a {
     font-size: 0.9rem;
-  }
-
-  .primary__btn,
-  .secondary__btn,
-  .btn-dark {
-    padding: 0.2rem 1rem !important;
   }
 
   section {

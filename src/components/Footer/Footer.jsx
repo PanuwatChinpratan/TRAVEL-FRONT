@@ -5,29 +5,29 @@ import { Container, Row, Col, ListGroupItem, ListGroup } from "reactstrap";
 const quick__links = [
   {
     path: "/home",
-    display: "Home",
+    display: "HOME",
   },
   {
     path: "/about",
-    display: "About",
+    display: "ABOUT",
   },
   {
     path: "/tours",
-    display: "Tours",
+    display: "TOURS",
   },
 ];
 const quick__links2 = [
   {
     path: "/gallery",
-    display: "Gallery",
+    display: "GALLERY",
   },
   {
     path: "/login",
-    display: "Login",
+    display: "LOGIN",
   },
   {
     path: "/register",
-    display: "Register",
+    display: "REGISTER",
   },
 ];
 
@@ -40,7 +40,7 @@ const Footer = () => {
           <Row>
             <Col lg="3" className="paddingfix">
               <div className="social">
-                <h5 className="text-center footer__link-title">Social</h5>
+                <h5 className="text-center footer__link-title">SOCIAL</h5>
                 <div className="social__links d-flex  justify-content-center gap-4 fixsocial__links">
                   <span>
                     <Link to="#">
@@ -66,7 +66,7 @@ const Footer = () => {
               </div>
             </Col>
             <Col lg="3">
-              <h5 className="footer__link-title text-center">Discover</h5>
+              <h5 className="footer__link-title text-center">DISCOVER</h5>
               <ListGroup className="footer__quick-links">
                 {quick__links.map((item, index) => (
                   <ListGroupItem
@@ -79,7 +79,7 @@ const Footer = () => {
               </ListGroup>
             </Col>
             <Col lg="3">
-              <h5 className="footer__link-title text-center">Quick Link</h5>
+              <h5 className="footer__link-title text-center">QUICK LINK</h5>
               <ListGroup className="footer__quick-links">
                 {quick__links2.map((item, index) => (
                   <ListGroupItem
@@ -93,34 +93,15 @@ const Footer = () => {
             </Col>
 
             <Col lg="3">
-              <h5 className="footer__link-title text-center">Contact</h5>
+              <h5 className="footer__link-title text-center">CONTACT</h5>
               <ListGroup className="footer__quick-links ">
                 <ListGroupItem className=" border-0 d-flex  gap-2 contactrespon">
-                  <h6 className="mb-0 d-flex align-items-center">
-                    <span>
-                      <i className="ri-map-pin-line"></i>
-                    </span>
-                    Address:
-                  </h6>
-                  <p className="mb-0">The World</p>
-                </ListGroupItem>
-                <ListGroupItem className=" border-0 d-flex  gap-2 contactrespon">
-                  <h6 className="mb-0 d-flex align-items-center">
-                    <span>
-                      <i className="ri-mail-line"></i>
-                    </span>
-                    Email:
-                  </h6>
+                  <h6 className="mb-0 d-flex align-items-center">EMAIL :</h6>
                   <p className="mb-0">60040161@kmitl.ac.th</p>
                 </ListGroupItem>
                 <ListGroupItem className="border-0 d-flex  gap-2 contactrespon">
-                  <h6 className="mb-0 d-flex align-items-center">
-                    <span>
-                      <i className="ri-phone-fill"></i>
-                    </span>
-                    Call me:
-                  </h6>
-                  <p className="mb-0">123456</p>
+                  <h6 className="mb-0 d-flex align-items-center">CALL :</h6>
+                  <p className="mb-0">+66 945677543</p>
                 </ListGroupItem>
               </ListGroup>
             </Col>

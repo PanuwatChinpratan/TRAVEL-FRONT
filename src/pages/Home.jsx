@@ -3,15 +3,14 @@ import "../styles/home.css";
 import { Container, Row, Col } from "reactstrap";
 import heroImg from "../assets/images/hero-img01.jpg";
 import heroImg02 from "../assets/images/hero-img02.jpg";
-import heroVideo from "../assets/images/hero-video.mp4";
+import imgth from "../assets/images/21.jpg"
 import worldImg from "../assets/images/world.png";
 import Subtitle from "../shared/Subtitle";
 import SearchBar from "../shared/SearchBar";
 import ServiceList from "../services/ServiceList";
 import FeaturedTourList from "../components/Featured-tours/FeaturedTourList";
-import MasonryImagesGallery from "../components/image-gallery/MasonryImagesGallery";
 import Testimonials from "../components/Testimonial/Testimonials";
-import Newsletter from "../shared/Newsletter";
+
 const Home = () => {
   return (
     <>
@@ -38,7 +37,7 @@ const Home = () => {
             </Col>
             <Col lg="2">
               <div className="hero__img-box hero__video-box mt-4">
-                <video src={heroVideo} alt="" controls />
+                <img src={imgth} alt=""  />
               </div>
             </Col>
             <Col lg="2">
@@ -94,21 +93,7 @@ const Home = () => {
           </div>
         </Container>
       </section>
-      <section>
-        <Container>
-          <Row>
-            <Col lg="12">
-              <Subtitle subtitle={"Gallery"} />
-              <h2 className="gallery__title">
-                Visit our customers tour gallery
-              </h2>
-            </Col>
-            <Col lg="12">
-              <MasonryImagesGallery />
-            </Col>
-          </Row>
-        </Container>
-      </section>
+     
 
       <section>
         <Container>
@@ -123,7 +108,7 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-      <Newsletter />
+    
     </>
   );
 };

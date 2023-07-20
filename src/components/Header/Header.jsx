@@ -8,15 +8,15 @@ import { AuthContext } from "../../context/AuthContext";
 const nav__links = [
   {
     path: "/home",
-    display: "Home",
+    display: "HOME",
   },
   {
     path: "/about",
-    display: "About",
+    display: "ABOUT",
   },
   {
     path: "/tours",
-    display: "Tours",
+    display: "TOURS",
   },
 ];
 
@@ -85,10 +85,10 @@ const Header = () => {
                 ) : (
                   <>
                     <Button className="btn primary__btn">
-                      <Link to="/login">Login</Link>
+                      <Link to="/login">LOGIN</Link>
                     </Button>
                     <Button className="btn primary__btn">
-                      <Link to="/register">Register</Link>
+                      <Link to="/register">REGISTER</Link>
                     </Button>
                   </>
                 )}

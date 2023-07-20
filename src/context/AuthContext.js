@@ -1,15 +1,13 @@
 import { createContext, useEffect, useReducer } from "react";
 
-const initail_state = {
-  user:
-    localStorage.getItem("user") !== undefined
-      ? JSON.parse(localStorage.getItem("user"))
-      : null,
+const initial_state = {
+  user: localStorage.getItem("user") !== undefined ? localStorage.getItem("user") : null,
   loading: false,
   error: null,
 };
 
-export const AuthContext = createContext(initail_state);
+export const AuthContext = createContext(initial_state);
+
 const AuthReducer = (state, action) => {
   switch (action.type) {
     case "LOGIN_START":
@@ -24,7 +22,7 @@ const AuthReducer = (state, action) => {
         loading: false,
         error: null,
       };
-    case "LOGIN_FAILE":
+    case "LOGIN_FAILURE":
       return {
         user: null,
         loading: false,
@@ -42,17 +40,19 @@ const AuthReducer = (state, action) => {
         loading: false,
         error: null,
       };
+
     default:
       return state;
   }
 };
 
 export const AuthContextProvider = ({ children }) => {
-  const [state, dispatch] = useReducer(AuthReducer, initail_state);
-  useEffect(() => {
-    localStorage.setItem("user", JSON.stringify(state.user));
-  }, [state.user]);
+  const [state, dispatch] = useReducer(AuthReducer, initial_state);
 
+  useEffect(() => {
+    localStorage.setItem("user", state.user);
+  }, [state.user]);
+  
   return (
     <AuthContext.Provider
       value={{
